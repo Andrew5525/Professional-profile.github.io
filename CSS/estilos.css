@@ -6,15 +6,14 @@
     font-family: Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
 }
-
 header{
-    /* background-image: url(../Imagenes/Resources/Main/1.jpg); */
     width: 100%;
     height: 100vh;
     background-size: cover;
     background-position: center;
+    position: relative;
+    z-index: 100;
 }
-
 .nav{
     position: fixed;
     width: 100%;
@@ -24,7 +23,6 @@ header{
     transition: all 0.5s ease;
     height: 70px;
 }
-
 .nav.active{
     background: rgb(34, 83, 199);
     padding: 0px 4px;
@@ -36,12 +34,11 @@ header{
     margin-left: 30px;
     cursor: pointer;
 }
-
 .main-options{
     text-align: right;
     height: 70px;
+   
 }
-
 .home{
     width: 38px;
     height: 38px;
@@ -50,18 +47,18 @@ header{
     float: right;
     cursor: pointer;
 }
-
 .menu{
     display: inline-block;
     height: 70px;
+ 
 }
-
 .menu li{
     list-style: none;
     height: 100%;
     margin-right: 50px;
+    
+    display:inline;
 } 
-
 .menu li a{
     color: #fff;
     font-weight: bold;
@@ -69,7 +66,6 @@ header{
     height: 70px;
     line-height: 70px;
 }
-
 .menu li a:hover{
     padding: 0px 20px;
     background: rgb(255,255,255);
@@ -80,3 +76,92 @@ header{
 .scrol{
     height: 100px;
 }
+/*------------------------------*/
+.t-service{
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}
+
+.si{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.container .hexagon {
+    position: relative;
+    width: 350px;
+    height: 400px;
+    margin: 50px 20px 70px;
+
+}
+ .container .hexagon::before{
+    content: '';
+    position: absolute;
+    bottom: -70px;
+    width: 100%;
+    height: 60px;
+    background: radial-gradient(rgba(0,0,0,0.15),transparent,
+    transparent);
+    border-radius: 50%;
+    transition: 0.5s;
+} 
+.container .hexagon:hover::before{
+    opacity: 0.8;
+    transform: scale(0.8);
+} 
+  .container .hexagon .shape{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%); 
+
+
+}  
+ .container .hexagon:hover .shape{
+    transform: translateY(-30px);
+} 
+ .container .hexagon .shape img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} 
+ .container .hexagon .shape .content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(45deg,#03a9f4,
+    rgba(3,169,244,0.5));
+    color: #fff;
+    opacity: 0;
+    transition: 0.5s;
+} 
+.container .hexagon:hover .shape .content{
+    opacity: 1;
+} 
+/*----------------------------*/
