@@ -33,11 +33,18 @@ header{
     margin-top: 15px;
     margin-left: 25px;
     cursor: pointer;
+    transition: all 0.5s ease;
+}
+.translate:hover{
+    padding: auto;
+    background: rgb(255,255,255);
+    background: rgba(22,121,190,1);
+    color:rgb(255,255,255);
+    border-radius: 2px
 }
 .main-options{
     text-align: right;
     height: 70px;
-   
 }
 .home{
     width: 38px;
@@ -46,17 +53,22 @@ header{
     margin-right: 30px;
     float: right;
     cursor: pointer;
+    transition: all 0.5s ease;
+}
+.home:hover{
+    background: rgb(255,255,255);
+    background: rgba(22,121,190,1);
+    color:rgb(255,255,255);
+    border-radius: 10px
 }
 .menu{
     display: inline-block;
     height: 70px;
- 
 }
 .menu li{
     list-style: none;
     height: 100%;
     margin-right: 50px;
-    
     display:inline;
 } 
 .menu li a{
@@ -68,7 +80,7 @@ header{
 
 }
 .menu li a:hover{
-    padding: 10px 20px;
+    padding: 10px 10px;
     background: rgb(255,255,255);
     background: rgba(22,121,190,1);
     color:rgb(255,255,255);
@@ -88,7 +100,7 @@ header{
     background-color: red;
 }
 
-.si{
+.sec__service{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -172,15 +184,89 @@ header{
 .pai{
     background-color: green;
 }
-.ab{
-    background-color: bisque;
 
-}
-.jaja{
+.foot{
     background-color: yellow;
     height: 20vh;
+}
+/*FORMULARIO*/
+.sec__contact{ 
+    
+    flex-wrap: wrap;
+    min-height: 100vh;
+    width: 100%;
+    display: flex ;
 
 }
+.code{
+    margin: auto;
+    padding: 2.0em 1.5em;
+    display: inline-block;
+    border: 1px solid rgb(31, 189, 36);
+    box-shadow: 5px 5px 5px #08620b;;
+    border-radius: 1em;
+}
+
+.form{
+    width: 90%;
+    max-width: 400px;
+    border-radius: 1em;
+    border: 1px solid rgb(14, 3, 137);
+    padding: 2.0em 1.5em;
+    margin: auto;
+    box-shadow: 5px 5px 5px #0093E9;;
+    background: #fff;
+    
+
+}
+.form__container{
+    width: 100%;
+    display: grid;
+    gap: 1em;
+    grid-auto-columns: 100%;
+}
+.form__tittle{
+    text-align: center;
+    font-size: 1.9rem;
+    margin-bottom: .4em;
+    color: rgb(0, 0, 0);
+}
+.form__input{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem; /*16 px*/
+    padding: 0.8em 1em; /*em para cambiar con el rem*/
+    outline: none;
+    border: none;
+    border: 1px solid rgb(14, 3, 137);
+    border-radius: 0.6em;
+    
+}
+
+.form__input--message{
+    resize: none;
+    padding:1.8em 1em;
+    margin-bottom: 0.5em;
+}
+
+.form__cta{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    color:#fff;
+    border-radius: 0.8em;
+    border:none;
+    padding: 0.7em 0;
+    cursor: pointer;
+    transition: 0.7s;
+}
+.form__cta:hover{
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0882c9 0%, #3d8d83 100%);
+    color:#fff;
+}
+
 /* Scroll personalizado xd*/
 body::-webkit-scrollbar{
     width: 10px;
@@ -192,4 +278,10 @@ body::-webkit-scrollbar-thumb{
 }
 body::-webkit-scrollbar-thumb:hover{
     background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+} 
+/*Responsive formulario*/
+@media (max-width:450px){
+    .form{
+        padding: 1em .5em;
+    }
 }
