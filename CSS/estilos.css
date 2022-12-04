@@ -8,7 +8,7 @@
 }
 header{
     width: 100%;
-    height: 100vh;
+    height: 15vh;
     background-size: cover;
     background-position: center;
     position: relative;
@@ -31,7 +31,7 @@ header{
     width: 38px;
     height: 38px;
     margin-top: 15px;
-    margin-left: 30px;
+    margin-left: 25px;
     cursor: pointer;
 }
 .main-options{
@@ -65,20 +65,22 @@ header{
     transition: all 0.5s ease;
     height: 70px;
     line-height: 70px;
+
 }
 .menu li a:hover{
-    padding: 0px 20px;
+    padding: 10px 20px;
     background: rgb(255,255,255);
     background: rgba(22,121,190,1);
     color:rgb(255,255,255);
-    border-radius: 8px
+    border-radius: 10px
 }
 .scrol{
-    height: 100px;
+    height: 0.1px;
 }
-/*------------------------------*/
-.t-service{
 
+/*------------------------------*/
+
+.t-service{
     position: relative;
     display: flex;
     justify-content: center;
@@ -102,9 +104,10 @@ header{
 }
 .container .hexagon {
     position: relative;
-    width: 350px;
-    height: 400px;
+    width: 290px;
+    height: 300px;
     margin: 50px 20px 70px;
+    cursor: pointer;
 
 }
  .container .hexagon::before{
@@ -113,10 +116,10 @@ header{
     bottom: -70px;
     width: 100%;
     height: 60px;
-    background: radial-gradient(rgba(0,0,0,0.15),transparent,
+    background: radial-gradient(rgba(0,0,0,0.20),transparent,
     transparent);
     border-radius: 50%;
-    transition: 0.5s;
+    transition: 0.7s;
 } 
 .container .hexagon:hover::before{
     opacity: 0.8;
@@ -135,6 +138,7 @@ header{
 }  
  .container .hexagon:hover .shape{
     transform: translateY(-30px);
+    transition: 0.7s;
 } 
  .container .hexagon .shape img{
     position: absolute;
@@ -155,13 +159,37 @@ header{
     align-items: center;
     padding: 20px;
     text-align: center;
-    background: linear-gradient(45deg,#03a9f4,
+    background: linear-gradient(45deg,#1e8dc0,
     rgba(3,169,244,0.5));
     color: #fff;
     opacity: 0;
-    transition: 0.5s;
+    transition: 0.7s;
 } 
 .container .hexagon:hover .shape .content{
     opacity: 1;
 } 
 /*----------------------------*/
+.pai{
+    background-color: green;
+}
+.ab{
+    background-color: bisque;
+
+}
+.jaja{
+    background-color: yellow;
+    height: 20vh;
+
+}
+/* Scroll personalizado xd*/
+body::-webkit-scrollbar{
+    width: 10px;
+}
+body::-webkit-scrollbar-thumb{
+    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+    border-radius: 10px;
+    border-right: 2px solid;
+}
+body::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+}
