@@ -6,6 +6,9 @@
     font-family: Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
 }
+
+/*--------------------------------------*/
+/*Menú nav*/
 header{
     width: 100%;
     height: 15vh;
@@ -67,7 +70,6 @@ header{
     line-height: 70px;
 
 }
-
 .menu li a:hover{
     padding: 7px 7px;
     background: rgb(255,255,255);
@@ -79,33 +81,126 @@ header{
     height: 0.1px;
 }
 /*------------------------------*/
+/*About carrusel me*/
 .Sobre_mi{
-    background-color: green;
-    padding: 10px;
-    margin: 15px 10px;
+    background-color: #FFDEE9;
+    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+    height: 670px;
+    width: 85%;
+    border-radius: 30px;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 2px 2px 3px #022451;;
 }
+.position{
+    position: absolute;
+    top: 300px;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+.slider{
+    background-image: url(../Imagenes/Resources/Main/1.jpg);
+    background-size:cover;
+    height: 50%;
+    width: 50%;
+    border-radius: 30px;
+    animation: animate 45s infinite;
+}
+
+@keyframes animate {
+    10%{
+        background-image: url(../Imagenes/Resources/Main/10.jpg);
+        background-size: cover;
+    }
+    20%{
+        background-image: url(../Imagenes/Resources/Main/9.jpg);
+        background-size: cover;
+    }
+    30%{
+        background-image: url(../Imagenes/Resources/Main/8.jpg);
+        background-size: cover;
+    }
+    40%{
+        background-image: url(../Imagenes/Resources/Main/7.jpg);
+        background-size: cover;
+    }
+    50%{
+        background-image: url(../Imagenes/Resources/Main/6.jpg);
+        background-size: cover;
+    }
+    60%{
+        background-image: url(../Imagenes/Resources/Main/5.jpg);
+        background-size: cover;
+    }
+    
+    70%{
+        background-image: url(../Imagenes/Resources/Main/4.jpg);
+        background-size: cover;
+    }
+    
+    80%{
+        background-image: url(../Imagenes/Resources/Main/3.jpg);
+        background-size: cover;
+    }
+    
+    90%{
+        background-image: url(../Imagenes/Resources/Main/2.jpg);
+        background-size: cover;
+    }
+    
+    100%{
+        background-image: url(../Imagenes/Resources/Main/1.jpg);
+        background-size: cover;
+    } 
+}
+/*texto*/
 .parrafo{
-    justify-content: left;
-    padding: 10px;
-    margin: 15px 10px;
-    background: #00d2ff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    width: 50%;
+    padding: 14px;
+    position:absolute;
+    top:71%;
+    left: 25%;
 }
-/*-----------------------------*/
+
+/*----------------------------*/
+/*Galeria hexagonal*/
+
 .t-service{
-    padding: 1rem;
-    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    top: 30px;
+    width: 50%;
+    height: 30px;
     display: flex;
+    left: 25%;
     justify-content: center;
-    align-items: center;
- 
+    position:absolute;
+    font-size: 2em;
+    font-weight: bold;
 }
+.h-contact{
+    text-align: center;
+    margin: 0 auto;
+    top: 30px;
+    width: 50%;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+
 .sec__service{
+    padding: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
 }
 .container{
+    padding-top: 8%;
     position: relative;
     display: flex;
     justify-content: center;
@@ -181,15 +276,13 @@ header{
 } 
 /*----------------------------*/
 
-.foot{
-    background: rgb(0,176,240);
-    height: 15vh;
-}
+
 /*---------------------------*/
+/*Scroll up*/
 #button-up{
    width: 50px;
    height: 50px;
-   background: #0ea5c7;
+   background: rgb(0,176,240);
    color: #fff;
    display: flex;
    justify-content: center;
@@ -197,16 +290,15 @@ header{
    border-radius: 50%;
    font-size: 20px;
    position: fixed;
-   bottom: 93px;
-   right: 50px;
+   bottom: 115px;
+   right: 45px;
    cursor:pointer;
-   border: 4px solid transparent;
+   border: 2px solid transparent;
    transition: all 0.3s ease;
-   box-shadow: 2px 2px 3px #1d0e8d;;
+   box-shadow: 2px 2px 3px #022451;;
    transform: scale(0);
    
 }
-
 #button-up:hover{
     transform: scale(1.1);
     border-color: rgba(0,0,0,0.1);
@@ -221,14 +313,13 @@ header{
 }
 .code{
     margin: auto;
-    margin-top: 5.4em;
+    margin-top: 7.6em;
     margin-bottom: 5.4em;
     padding: 2.0em 1.5em;
     display: inline-block;
     border: 1px solid rgb(31, 189, 36);
     box-shadow: 5px 5px 5px #08620b;;
     border-radius: 1em;
-    height: fit-content;
 }
 .form{
     margin: auto;
@@ -289,7 +380,7 @@ header{
     background-image: linear-gradient(160deg, #0882c9 0%, #3d8d83 100%);
     color:#fff;
 }
-
+/*---------------------------*/
 /* Scroll personalizado xd*/
 body::-webkit-scrollbar{
     width: 10px;
@@ -302,6 +393,68 @@ body::-webkit-scrollbar-thumb{
 body::-webkit-scrollbar-thumb:hover{
     background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
 } 
+
+/*--------------------------------------*/
+/* Footer*/
+footer {
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    padding-bottom: 0.1px;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 60px;
+}
+.contact-us {
+    width: 40%;
+    color: #fff
+}
+.follow {
+    text-align: center;
+    padding: 5px;
+    font-weight: 500;
+    font-size: 35px;
+    width: 210px;
+}
+.social-media {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+.social-media-icon {
+    display: inline-block;
+    margin-left: 20px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+}
+.social-media-icon:hover {
+    background: #fff;
+    color: #764ba2;
+}
+.social-media-icon i {
+    font-size: 38px;
+    line-height: 50px;
+}
+.line {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 3px;
+    background: #fff;
+    margin-bottom: 25px;
+}
+/*--------------------------------------*/
+
 /*Responsive formulario*/
 @media (max-width:450px){
     .form{
@@ -312,4 +465,19 @@ body::-webkit-scrollbar-thumb:hover{
         padding: 1em .5em; 
     }
 }
-
+/*Responsive footer*/
+@media screen and (max-width: 450px) {
+    .footer-content{
+    justify-content: left;
+     }
+     .social-media{
+        width: 90%;
+        justify-content: space-evenly;
+     }
+    .social-media-icon{
+        margin-left: 15%;
+    }
+     .social-media i{
+        margin-left: 0px;
+     }
+    }
