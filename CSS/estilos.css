@@ -33,8 +33,6 @@ header{
 .translate{
     width: 38px;
     height: 38px;
-    margin-top: 15px;
-    margin-left: 25px;
     cursor: pointer;
     transition: all 0.5s ease;
 }
@@ -46,6 +44,99 @@ header{
     border-radius: 12px
 
 }
+/*------*/
+
+.lang-menu {
+    width: 50px;
+    text-align: right;
+    margin-top: 10px;
+    position: relative;
+}
+.lang-menu .selected-lang {
+    display: flex;   
+    justify-content: space-between;
+    line-height: 2;
+    cursor: pointer;
+}
+.lang-menu .selected-lang:before {
+    content: '';
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-image: url(https://www.countryflags.io/us/flat/32.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.lang-menu ul {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: none;
+    background-color: #fff;
+    border: 1px solid #f8f8f8;
+    position: absolute;
+    top: 45px;
+    left: 15px;
+    width: 129px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.7);
+}
+
+
+.lang-menu ul li {
+    list-style: none;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lang-menu ul li a {
+    text-decoration: none;
+    width: 200px;
+    padding: 5px 10px;
+    display: block;
+}
+
+.lang-menu ul li:hover {
+    background-color: #dbd3d3;
+}
+
+.lang-menu ul li a:before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 8px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.Ep:before {
+    background-image: url(../Imagenes/Resources/Language/colombia.png);
+    width: 32px;
+    height: 32px;
+}
+
+.En:before {
+    background-image: url(../Imagenes/Resources/Language/estados-unidos.png);
+    width: 32px;
+    height: 32px;
+}
+
+.Pr:before {
+    background-image: url(../Imagenes/Resources/Language/brasil.png);
+    width: 32px;
+    height: 32px;
+}
+
+
+.lang-menu:hover ul {
+    display: block;
+}
+
+/*--------------*/
 .main-options{
     text-align: right;
     height: 70px;
@@ -59,7 +150,7 @@ header{
 .menu li{
     list-style: none;
     height: 100%;
-    margin-right: 20px;
+    margin-right: 50px;
     display:inline;
 } 
 .menu li a{
@@ -68,7 +159,6 @@ header{
     transition: all 0.5s ease;
     height: 70px;
     line-height: 70px;
-
 }
 .menu li a:hover{
     padding: 7px 7px;
@@ -208,9 +298,8 @@ header{
     box-shadow: 2px 2px 7px #022451;;
 }
 .ing-container2{
-
     padding-top: 30px;
-     margin: auto;
+    margin: auto;
     width: 95%;
     max-width: 400px;
     }
@@ -219,9 +308,6 @@ header{
 /*Galeria hexagonal*/
 
 .t-service{
-
-
-    
     text-align: center;
     margin: 0 auto;
     top: 30px;
@@ -245,7 +331,6 @@ header{
     align-items: center;
     justify-content: center;
     font-size: 60px;
-
 }
 
 .h-contact{
@@ -528,6 +613,53 @@ footer {
 }
 /*--------------------------------------*/
 
+@media (min-width:300px){
+    .menu li a{
+        color: #fff;
+        font-size: 15px;
+        transition: all 0.5s ease;
+        line-height: 70px;
+    }
+    .menu li{
+        list-style: none;
+        height: 100%;
+        margin-right: 10px;
+        display:inline;
+    } 
+    .b-contact{
+        color: #ffffff;
+        margin: auto;
+        padding-top: 20%;
+        text-align: center;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 50px;
+    }
+        .parrafo{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            width: 50%;
+            padding: 5px;
+            position:absolute;
+            top:168%;
+            left: 25%;
+            
+        }
+    
+
+    .Banner{ 
+        height: 96vh;
+        width: 100%;
+        background-image: linear-gradient(to top, rgba(35, 46, 199, 0.477) 0%, rgba(73, 100, 69, 0.471) 100%), url(../Imagenes/Resources/Main/Banner.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        margin-bottom: 40px;
+    }
+}
 /*Responsive formulario*/
 @media (max-width:450px){
     .form{
@@ -553,4 +685,5 @@ footer {
      .social-media i{
         margin-left: 0px;
      }
+
     }
