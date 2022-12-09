@@ -11,7 +11,7 @@
 /*Menú nav*/
 header{
     width: 100%;
-    height: 15vh;
+    height: 70px;
     background-size: cover;
     background-position: center;
     position: relative;
@@ -81,12 +81,22 @@ header{
     height: 0.1px;
 }
 /*------------------------------*/
+.Banner{ 
+    height: 89vh;
+    background-image: linear-gradient(to top, rgba(35, 46, 199, 0.477) 0%, rgba(73, 100, 69, 0.471) 100%), url(../Imagenes/Resources/Main/Banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    margin-bottom: 40px;
+}
+
 /*About carrusel me*/
 .Sobre_mi{
     background-color: #FFDEE9;
     background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
     height: 670px;
-    width: 85%;
+    width: 98%;
     border-radius: 30px;
     display: block;
     margin: 0 auto;
@@ -94,7 +104,7 @@ header{
 }
 .position{
     position: absolute;
-    top: 300px;
+    top: 140%;
     left:50%;
     transform: translate(-50%, -50%);
 }
@@ -158,16 +168,60 @@ header{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
     width: 50%;
-    padding: 14px;
+    padding: 5px;
     position:absolute;
-    top:71%;
+    top:168%;
     left: 25%;
+    
+}
+.psize{
+    font-size: small;
+}
+.hsize{ 
+    font-size: medium;
 }
 
 /*----------------------------*/
+.arreglar{
+    background-color: #FFDEE9;
+    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+    margin: 0 auto;
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    width: 98% ; 
+    display: flex ;
+    height: 200%;
+    border-radius: 30px;
+    box-shadow: 2px 2px 7px #022451;;
+
+}
+.ing-container{
+    background: #ffffff;
+    margin: auto;
+    padding: 10px;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 7px #022451;;
+}
+.ing-container2{
+
+    padding-top: 30px;
+     margin: auto;
+    width: 95%;
+    max-width: 400px;
+    }
+
+
 /*Galeria hexagonal*/
 
 .t-service{
+
+
+    
     text-align: center;
     margin: 0 auto;
     top: 30px;
@@ -180,18 +234,40 @@ header{
     font-size: 2em;
     font-weight: bold;
 }
+
+.b-contact{
+    color: #ffffff;
+    margin: auto;
+    padding-top: 20%;
+    text-align: center;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+
+}
+
 .h-contact{
     text-align: center;
     margin: 0 auto;
-    top: 30px;
     width: 50%;
     display: flex;
-    padding: 10px;
+    padding: 15px;
+    padding-bottom: 30px;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
 }
 
+.S-contact{
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 50%;
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+}
 
 .sec__service{
     padding: 60px;
@@ -330,8 +406,6 @@ header{
     padding: 2.0em 1.5em;
     box-shadow: 5px 5px 5px #0093E9;;
     background: #fff;
-    
-
 }
 .form__container{
     width: 100%;
@@ -341,7 +415,7 @@ header{
 }
 .form__tittle{
     text-align: center;
-    font-size: 1.9rem;
+    font-size: 1.6rem;
     margin-bottom: .4em;
     color: rgb(0, 0, 0);
 }
@@ -393,7 +467,6 @@ body::-webkit-scrollbar-thumb{
 body::-webkit-scrollbar-thumb:hover{
     background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
 } 
-
 /*--------------------------------------*/
 /* Footer*/
 footer {
